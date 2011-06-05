@@ -3,7 +3,7 @@ Progress/ABL/OpenEdge SyntaxHighlighter
 
 What is this?
 --------------
-This is a brush for [Alex Gorbachev's SyntaxHighlighter][syntaxhighlighterhome] (currently v3.0.83), which is a small JavaScript library for general purpose code syntax highlighting.  This brush adds support for the Progress/ABL/OpenEdge programming language (currently, version 10.2A).  Also included is a plugin for the [SyntaxHighlighter Evolved][syntaxhighlighterevolvedhome] plugin by [Viper007Bond][viperhome] for integrating syntax highlighting directly into [Wordpress][wordpresshome].
+This is a brush for [Alex Gorbachev's SyntaxHighlighter][syntaxhighlighterhome], which is a small JavaScript library for general purpose code syntax highlighting.  This brush adds support for the Progress/ABL/OpenEdge programming language (currently, version 10.2A).  Also included is a plugin for the [SyntaxHighlighter Evolved][syntaxhighlighterevolvedhome] plugin by [Viper007Bond][viperhome] for integrating syntax highlighting directly into [Wordpress][wordpresshome].
 
 Why use this?
 --------------
@@ -16,13 +16,14 @@ How to use it
 
 Errata
 -------
-* I apologize for the massive size of the plugin (35KiB).  The reason is because of the ungodly reliance ABL has on its stupid built-in (and sometimes quite verbose) keywords to try and do everything for you, and the fact that it lets you be lazy by abbreviating them - each keyword abbreviation possibility had to be accounted for in the brush's keyword list.  Minifying the code will only strip off a few KiB, but may be worth it depending on your needs.
+* The JavaScript was minified using Google's [Closure Compiler][closure].
 * Nested comments do not always work correctly, do to an inherent weakness of regular expressions.  There could be workarounds created to handle up to `n` levels of comment nesting, but this works fine for my needs as-is.  I would welcome a patch for this feature!
 
 License
 --------
 Progress/ABL/OpenEdge SyntaxHighlighter is released under the [LGPLv3][licensesite] license.
 
+[closure]: http://closure-compiler.appspot.com/home
 [syntaxhighlighterhome]: http://alexgorbatchev.com/SyntaxHighlighter/
 [syntaxhighlighterevolvedhome]: http://wordpress.org/extend/plugins/syntaxhighlighter
 [viperhome]: http://www.viper007bond.com
